@@ -157,11 +157,16 @@ ol li ol {
 
 blockquote {
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 1rem 1rem .1rem 1rem;
     background: var(--blockquote);
     font-weight: 400;
     border-left: 5px solid var(--blockquote-left);
 }
+blockquote p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
 
 blockquote :not(pre)>code[class*='language-'] {
     background: rgba(0, 0, 0, 0.1) !important;
@@ -169,8 +174,14 @@ blockquote :not(pre)>code[class*='language-'] {
 
 @media screen and (min-width: 800px) {
     blockquote {
-        padding: 2rem 0 2rem 2rem;
+        padding: 2rem 2rem .2rem 2rem;
     }
+}
+
+blockquote .author {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
 }
 
 ::selection {

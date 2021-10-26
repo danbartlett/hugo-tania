@@ -16,4 +16,7 @@
     {{ range .Site.Params.custom_css -}}
         <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}
+
+    <!-- Manually added canonical link to assist with migration from HTHB -->
+    <link rel="canonical" href="{{ .Permalink }}">
 </head>
